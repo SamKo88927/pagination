@@ -10,7 +10,7 @@ interface UsersResponse {
   total: number;
   users: User[];
 }
-const page = () => {
+const Page = () => {
   const [data, setData] = useState<User[]>([]);
   const [users, setUsers] = useState<User[]>([]);
   // const users: User[] = data.slice(skip, skip + itemsPerPage); 但會需要加skelton loading 改用state優勢會有資料暫存 缺點需要component re-render
@@ -116,4 +116,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
