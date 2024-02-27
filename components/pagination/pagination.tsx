@@ -1,4 +1,4 @@
-import React from "react";
+"use client";
 
 interface PaginationProps {
   currentPage: number; // 當前頁碼
